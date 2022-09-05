@@ -7,6 +7,7 @@ jobs:
   validate_template:
     requires: [~pr, ~commit]
     steps:
+      - echo_SD_TEMPLATE_PATH: echo $SD_TEMPLATE_PATH
       - install_prerequisites: npm install -g screwdriver-template-main
       - validate_template: template-validate
 
