@@ -11,8 +11,8 @@ config:
     screwdriver.cd/dockerCpu: LOW
     screwdriver.cd/dockerRam: LOW
   environment:
-    DOCKER_REPO: "CHANGE ME"
-    DOCKER_MULTI_PLATFORM_BUILDS_ENABLED: 0
+    DOCKER_REPO: "amitlata/screwdriver"
+    DOCKER_MULTI_PLATFORM_BUILDS_ENABLED: 1
     DOCKER_TARGET_PLATFORMS: linux/amd64,linux/arm64
     DOCKERFILE_PATH: '.'
     DOCKERFILE_NAME: Dockerfile
